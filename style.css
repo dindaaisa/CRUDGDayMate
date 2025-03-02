@@ -10,12 +10,12 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #f9f9f9;
+    background-color: #F3E0D6; /* Neutral Light */
 }
 
 /* Navbar Styling */
 header {
-    background-color: #0073e6;
+    background-color: #C73645; /* Primary - Rust Red */
     color: white;
     padding: 15px 20px;
     text-align: center;
@@ -56,6 +56,7 @@ nav ul li a.active {
 h2, h3 {
     text-align: center;
     margin-bottom: 15px;
+    color: #2B2B2B; /* Neutral Dark */
 }
 
 /* Form Styling */
@@ -71,6 +72,7 @@ h2, h3 {
     font-weight: bold;
     display: block;
     margin: 10px 0 5px;
+    color: #2B2B2B; /* Neutral Dark */
 }
 
 .planning-form input,
@@ -78,14 +80,14 @@ h2, h3 {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #6A2E2A; /* Accent - Dark Redwood */
     border-radius: 5px;
     display: block;
 }
 
 .planning-form button {
     width: 100%;
-    background-color: #0073e6;
+    background-color: #2F855A; /* Confirm Button - Adventure Green */
     color: white;
     padding: 10px;
     border: none;
@@ -95,8 +97,8 @@ h2, h3 {
     transition: background 0.3s;
 }
 
-.itinerary-form button:hover {
-    background-color: #005bb5;
+.planning-form button:hover {
+    background-color: #1E6A40; /* Darker Green */
 }
 
 /* Table Styling */
@@ -105,7 +107,7 @@ h2, h3 {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    overflow-x: auto; /* Agar bisa di-scroll jika layar kecil */
+    overflow-x: auto; /* Responsive Scroll */
 }
 
 table {
@@ -116,11 +118,11 @@ table {
     overflow: hidden;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
-    min-width: 600px; /* Mencegah tabel terlalu kecil */
+    min-width: 600px; /* Prevents table from shrinking */
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid #6A2E2A; /* Accent - Dark Redwood */
 }
 
 th, td {
@@ -131,11 +133,11 @@ th, td {
 }
 
 th {
-    background-color: #14213D;
+    background-color: #E86A33; /* Secondary - Sunset Orange */
     color: white;
 }
 
-/* Tombol Edit & Hapus */
+/* Buttons */
 td button {
     padding: 6px 12px;
     border: none;
@@ -148,18 +150,33 @@ td button {
     transition: all 0.3s;
 }
 
-button:first-child {
-    background-color: #f39c12;
-    color: white;
+/* Edit Button */
+button.edit-btn {
+    background-color: #FFA133; /* Warm Yellow */
 }
 
+button.edit-btn:hover {
+    background-color: #D9821E; /* Darker shade */
+    transform: scale(1.05);
+}
+
+/* Delete Button */
 button.delete-btn {
-    background-color: #e74c3c;
+    background-color: #B22222; /* Strong Red */
 }
 
 button.delete-btn:hover {
-    background-color: #c0392b;
+    background-color: darkred;
     transform: scale(1.05);
+}
+
+/* Confirm / Save Button */
+button.confirm-btn {
+    background-color: #2F855A; /* Adventure Green */
+}
+
+button.confirm-btn:hover {
+    background-color: #1E6A40; /* Darker Green */
 }
 
 /* Responsive Design */
