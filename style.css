@@ -15,7 +15,7 @@ body {
 
 /* Navbar Styling */
 header {
-    background-color: #007bff;
+    background-color: #0073e6;
     color: white;
     padding: 15px 20px;
     text-align: center;
@@ -85,7 +85,7 @@ h2, h3 {
 
 .planning-form button {
     width: 100%;
-    background-color: #007bff;
+    background-color: #0073e6;
     color: white;
     padding: 10px;
     border: none;
@@ -95,7 +95,7 @@ h2, h3 {
     transition: background 0.3s;
 }
 
-.planning-form button:hover {
+.itinerary-form button:hover {
     background-color: #005bb5;
 }
 
@@ -131,7 +131,7 @@ th, td {
 }
 
 th {
-    background-color: #0073e6;
+    background-color: #14213D;
     color: white;
 }
 
@@ -148,13 +148,9 @@ td button {
     transition: all 0.3s;
 }
 
-button.edit-btn {
+button:first-child {
     background-color: #f39c12;
-}
-
-button.edit-btn:hover {
-    background-color: #d68910;
-    transform: scale(1.05);
+    color: white;
 }
 
 button.delete-btn {
