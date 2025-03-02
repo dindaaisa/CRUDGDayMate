@@ -30,10 +30,22 @@
             <input type="text" id="user-name" placeholder="Isi nama kamu" required>
 
             <label for="trip-origin">Asal:</label>
-            <input type="text" id="trip-origin" placeholder="Masukkan kota asal" required>
+            <select id="trip-origin" required>
+                <option value="">Pilih Kota Asal</option>
+                <option value="Surabaya">Surabaya</option>
+                <option value="Bali">Bali</option>
+                <option value="Yogyakarta">Yogyakarta</option>
+                <option value="Jakarta">Jakarta</option>
+            </select>
 
             <label for="trip-destination">Tujuan:</label>
-            <input type="text" id="trip-destination" placeholder="Masukkan kota tujuan" required>
+            <select id="trip-destination" required>
+                <option value="">Pilih Kota Tujuan</option>
+                <option value="Surabaya">Surabaya</option>
+                <option value="Bali">Bali</option>
+                <option value="Yogyakarta">Yogyakarta</option>
+                <option value="Jakarta">Jakarta</option>
+            </select>
 
             <label for="start-date">Tanggal Keberangkatan:</label>
             <input type="date" id="start-date" required>
@@ -42,20 +54,27 @@
             <input type="number" id="days" min="1" max="30" placeholder="Masukkan jumlah hari" required>
             
             <label for="hotel">Hotel:</label>
-            <input type="text" id="hotel" placeholder="Masukkan nama hotel">
+            <select id="hotel">
+                <option value="">Pilih Hotel</option>
+            </select>
             
             <label for="culinary">Kuliner:</label>
-            <input type="text" id="culinary" placeholder="Masukkan tempat kuliner">
+            <select id="culinary">
+                <option value="">Pilih Kuliner</option>
+            </select>
             
             <label for="destination">Tempat Wisata:</label>
-            <input type="text" id="destination" placeholder="Masukkan tempat wisata">
+            <select id="destination">
+                <option value="">Pilih Tempat Wisata</option>
+            </select>
             
             <label for="transportation">Transportasi:</label>
-            <select id="transportation">
-                <option value="pesawat">Pesawat</option>
-                <option value="kereta-api">Kereta Api</option>
-                <option value="kapal">Kapal</option>
-                <option value="bis">Bis</option>
+            <select id="transportation" required>
+                <option value="">Pilih Transportasi</option>
+                <option value="Pesawat">Pesawat</option>
+                <option value="Kereta Api">Kereta Api</option>
+                <option value="Kapal">Kapal</option>
+                <option value="Bis">Bis</option>
             </select>
 
             <button id="addPlanningBtn">Tambah Planning</button>
@@ -67,6 +86,7 @@
             <table>
                 <thead>
                     <tr>
+                        <th>No.</th>
                         <th>Nama</th>
                         <th>Perjalanan</th>
                         <th>Tanggal</th>
