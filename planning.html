@@ -15,7 +15,7 @@
             <ul>
                 <li><a href="index.html">Beranda</a></li>
                 <li><a href="#">Destinasi</a></li>
-                <li><a href="planning.html">Planning</a></li>
+                <li><a href="planning.html" class="active">Planning</a></li>
             </ul>
         </nav>
     </header>
@@ -24,11 +24,17 @@
     <section class="planning">
         <h2>Rencanakan Perjalananmu</h2>
         
-        <!-- Form Itinerary -->
-        <div class="itinerary-form">
-            <label for="trip-name">Nama Perjalanan:</label>
-            <input type="text" id="trip-name" placeholder="Misal: Liburan ke Bali" required>
-            
+        <!-- Form Planning -->
+        <div class="planning-form">
+            <label for="user-name">Nama:</label>
+            <input type="text" id="user-name" placeholder="Isi nama kamu" required>
+
+            <label for="trip-origin">Asal:</label>
+            <input type="text" id="trip-origin" placeholder="Masukkan kota asal" required>
+
+            <label for="trip-destination">Tujuan:</label>
+            <input type="text" id="trip-destination" placeholder="Masukkan kota tujuan" required>
+
             <label for="start-date">Tanggal Keberangkatan:</label>
             <input type="date" id="start-date" required>
             
@@ -52,16 +58,17 @@
                 <option value="bis">Bis</option>
             </select>
 
-            <button id="addItineraryBtn">Tambah Itinerary</button>
+            <button id="addPlanningBtn">Tambah Planning</button>
         </div>
 
-        <!-- Itinerary List in Table Format -->
-        <div class="itinerary-container">
-            <h3>Itinerary Perjalanan</h3>
-            <table border="1">
+        <!-- Planning List in Table Format -->
+        <div class="planning-container">
+            <h3>Daftar Planning Perjalanan</h3>
+            <table>
                 <thead>
                     <tr>
-                        <th>Nama Perjalanan</th>
+                        <th>Nama</th>
+                        <th>Perjalanan</th>
                         <th>Tanggal</th>
                         <th>Hari</th>
                         <th>Hotel</th>
@@ -71,8 +78,8 @@
                         <th>Aksi</th>
                     </tr>
                 </thead>
-                <tbody id="itinerary-list">
-                    <!-- Data itinerary akan dimasukkan di sini oleh JavaScript -->
+                <tbody id="planning-list">
+                    <!-- Data planning akan dimasukkan di sini oleh JavaScript -->
                 </tbody>
             </table>
         </div>

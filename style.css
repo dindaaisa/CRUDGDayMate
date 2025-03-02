@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Navbar Styling */
@@ -31,6 +31,10 @@ nav ul li a {
     font-weight: bold;
 }
 
+nav ul li a.active {
+    text-decoration: underline;
+}
+
 /* Section Styling */
 .planning {
     width: 80%;
@@ -47,7 +51,7 @@ h2, h3 {
 }
 
 /* Form Styling */
-.itinerary-form {
+.planning-form {
     background: white;
     padding: 20px;
     border-radius: 8px;
@@ -55,14 +59,14 @@ h2, h3 {
     margin-bottom: 20px;
 }
 
-.itinerary-form label {
+.planning-form label {
     font-weight: bold;
     display: block;
     margin: 10px 0 5px;
 }
 
-.itinerary-form input,
-.itinerary-form select {
+.planning-form input,
+.planning-form select {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -70,7 +74,7 @@ h2, h3 {
     border-radius: 5px;
 }
 
-.itinerary-form button {
+.planning-form button {
     width: 100%;
     background-color: #0073e6;
     color: white;
@@ -81,13 +85,17 @@ h2, h3 {
     font-size: 16px;
 }
 
-.itinerary-form button:hover {
+.planning-form button:hover {
     background-color: #005bb5;
 }
 
 /* Table Styling */
-.itinerary-container {
-    margin-top: 20px;
+.planning-container {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
 }
 
 table {
@@ -102,7 +110,8 @@ table {
 th, td {
     padding: 12px;
     border: 1px solid #ddd;
-    text-align: left;
+    text-align: center;
+    white-space: nowrap;
 }
 
 th {
@@ -116,32 +125,24 @@ td button {
     cursor: pointer;
     font-size: 14px;
     border-radius: 5px;
+    color: white;
+    display: inline-block;
+    margin: 2px;
 }
 
-td button:hover {
-    opacity: 0.8;
-}
-
-/* Button Styling */
-button {
-    cursor: pointer;
-}
-
-button:first-child {
+button.edit-btn {
     background-color: #f39c12;
-    color: white;
 }
 
-button:last-child {
-    background-color: #e74c3c;
-    color: white;
-}
-
-button:first-child:hover {
+button.edit-btn:hover {
     background-color: #d68910;
 }
 
-button:last-child:hover {
+button.delete-btn {
+    background-color: #e74c3c;
+}
+
+button.delete-btn:hover {
     background-color: #c0392b;
 }
 
